@@ -5,7 +5,7 @@
             async function func()
             {
                 const res=await fetch('/.netlify/functions/hello')
-                const data=res.json()
+                const data=await res.json()
                 alert(data.message)
             }
             </script>
