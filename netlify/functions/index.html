@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <button onclick="func()">Call API</button>
+        <script>
+            async function func()
+            {
+                const res=await fetch('/.netlify/functions/hello')
+                const data=res.json()
+                alert(data.message)
+            }
+            </script>
+    </body>
+</html>
